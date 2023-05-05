@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <title>Planet4U</title>
+  </head>
+  <body>
+    <!-- Start of Navbar -->
+    <header class="navbar-container">
+      <a href="/" class="nav-logo">Planet<span>4U</span></a>
+      <nav class="nav-list">
+        <ul>
+          <li><a href="#mercury" class="mercury">Mercury</a></li>
+          <li><a href="#venus" class="venus">Venus</a></li>
+          <li><a href="#earth" class="earth">Earth</a></li>
+          <li><a href="#mars" class="mars">Mars</a></li>
+        </ul>
+        <a href="#" id="hamburger-menu">
+          <i data-feather="menu"></i>
+        </a>
+      </nav>
+    </header>
+    <!-- Start of Navbar -->
+
+    <!-- Start of Main -->
+    <main>
+      <!-- Start of Main Content -->
+      <div class="content">
+        <section class="planet" id="mercury">
+          <article class="content-description">
+            <h1 class="title">Mercury</h1>
+            <p>
+              Mercury is the closest planet to the sun in our solar system. It's
+              known as the 'heater' because of its extremely high temperature
+              that can reach up to 430 degrees Celsius during the day and drop
+              to minus 180 degrees Celsius at night. Mercury is also the
+              smallest planet in our solar system, with a diameter only a
+              quarter of Earth's. It has a very slow rotation, so one day on
+              Mercury is equivalent to two orbits around the sun.
+            </p>
+          </article>
+          <div class="content-image">
+            <img src="./img/mercury.png" alt="Mercury" />
+          </div>
+        </section>
+        <section class="planet" id="venus">
+          <article class="content-description">
+            <h1 class="title">Venus</h1>
+            <p>
+              Venus is often called Earth's 'sister planet' due to its similar
+              size and composition. However, Venus has a very different
+              atmosphere, consisting mostly of carbon dioxide and clouds of
+              sulfuric acid that trap heat, making it the hottest planet in our
+              solar system with surface temperatures that can reach up to 471
+              degrees Celsius. Venus also rotates slowly in the opposite
+              direction to most planets, meaning that its day is longer than its
+              year. Despite its proximity to Earth, Venus remains one of the
+              most mysterious planets in our solar system, and there is still
+              much to be discovered about this fascinating planet.
+            </p>
+          </article>
+          <div class="content-image">
+            <img src="./img/venus.png" alt="Venus" />
+          </div>
+        </section>
+        <section class="planet" id="earth">
+          <article class="content-description">
+            <h1 class="title">Earth</h1>
+            <p>
+              Earth is the third planet from the sun and the only known planet
+              that supports life. It's often called the 'Blue Planet' because of
+              its vast oceans that cover about 71% of its surface. Earth is the
+              largest of the terrestrial planets and has a diverse range of
+              climates and ecosystems, from freezing polar regions to scorching
+              deserts, lush rainforests to vast oceans. The planet's atmosphere
+              is also unique, containing the right mix of gases that allow for
+              life to thrive. Earth orbits the sun at just the right distance to
+              maintain liquid water on its surface, making it an ideal planet
+              for sustaining life as we know it.
+            </p>
+          </article>
+          <div class="content-image">
+            <img src="./img/earth.png" alt="Earth" />
+          </div>
+        </section>
+        <section class="planet" id="mars">
+          <article class="content-description">
+            <h1 class="title">Mars</h1>
+            <p>
+              Mars is the fourth planet from the sun, known for its reddish
+              appearance caused by iron oxide on its surface. It has a thin
+              atmosphere mostly made of carbon dioxide and a dusty, rocky
+              landscape. Scientists believe it may have had liquid water and
+              potential for life. Mars is a target for future human exploration
+              and colonization.
+            </p>
+          </article>
+          <div class="content-image">
+            <img src="./img/mars.png" alt="Venus" />
+          </div>
+        </section>
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Start of Sidebar -->
+      <aside>
+        <div class="sidebar">
+          <ul>
+            <li>
+              <a href="#mercury"><img src="./img/mercury.png" alt=""></a>
+            </li>
+            <li>
+              <a href="#venus"><img src="./img/venus.png" alt=""></a>
+            </li>
+            <li>
+              <a href="#earth"><img src="./img/earth.png" alt=""></a>
+            </li>
+            <li>
+              <a href="#mars"><img src="./img/mars.png" alt=""></a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <!-- End of Sidebar -->
+    </main>
+    <!-- End of Main -->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>

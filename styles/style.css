@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,600&display=swap");
+
+:root {
+  --background: #2c3333;
+  --primary: #60a6d9;
+  --mercury: #e6e9ed;
+  --venus: #ffce54;
+  --earth: #366db6;
+  --mars: #f04528;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background);
+}
+
+header.navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-block: 1.5rem;
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+}
+
+header.navbar-container .nav-logo {
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+header.navbar-container .nav-logo span {
+  color: var(--primary);
+}
+
+header.navbar-container .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+  list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+  transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a.mercury {
+  background-color: var(--mercury);
+  color: var(--background);
+}
+header.navbar-container .nav-list li:hover a.venus {
+  background-color: var(--venus);
+  color: var(--background);
+}
+header.navbar-container .nav-list li:hover a.earth {
+  background-color: var(--earth);
+}
+header.navbar-container .nav-list li:hover a.mars {
+  background-color: var(--mars);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+.navbar-fixed {
+  background-color: var(--background);
+  transition: 0.3s linear;
+}
+
+/* Main */
+
+main {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.planet {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding-inline: 2rem;
+  margin-bottom: 5rem;
+  padding-top: 7rem;
+}
+
+#mercury .content-image img,
+#earth .content-image img {
+  margin-left: auto;
+}
+
+#venus .content-description,
+#mars .content-description {
+  order: 2;
+}
+
+#venus .content-image,
+#mars .content-image {
+  order: 1;
+}
+
+.content-description {
+  flex: 1 1;
+  text-align: justify;
+  font-weight: 500;
+}
+
+.content-description .title {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+#mercury .content-description .title {
+  color: #e6e9ed;
+}
+
+#venus .content-description .title {
+  color: #ffce54;
+}
+
+#earth .content-description .title {
+  color: #366db6;
+}
+
+#mars .content-description .title {
+  color: #f04528;
+}
+
+.content-description p {
+  line-height: 2;
+}
+
+.content-image {
+  display: flex;
+  flex: 1;
+}
+
+.content-image img {
+  min-width: 250px;
+  width: 350px;
+}
+
+/* Sidebar */
+
+main aside {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+}
+
+main aside .sidebar {
+  height: 100%;
+  display: flex;
+}
+
+main aside .sidebar ul {
+  padding: 1.5rem 2rem;
+  margin: auto;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+main aside .sidebar li {
+  list-style-type: none;
+}
+
+main aside .sidebar li img {
+  width: 40px;
+  transition: all 0.2s ease-in-out;
+}
+
+main aside .sidebar li:hover img {
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Responsive Breakpoints */
+
+@media (max-width: 900px) {
+  header.navbar-container .nav-list ul {
+    flex-direction: column;
+    background-color: #454545;
+    padding-block: 2rem;
+    padding-inline-start: 0.5rem;
+    border-radius: 5px 0 0 5px;
+    width: 40%;
+    margin-top: 3rem;
+    position: absolute;
+    right: -100%;
+    transition: 0.3s ease-in-out;
+  }
+
+  header.navbar-container .nav-list ul.active {
+    right: 0;
+  }
+
+  #hamburger-menu {
+    display: block;
+  }
+
+  main {
+    padding-inline: 0;
+  }
+
+  .planet {
+    flex-direction: column;
+    row-gap: 5rem;
+  }
+
+  .content-description .title {
+    font-size: 3rem;
+  }
+
+  .content-description p {
+    font-size: 1rem;
+  }
+
+  .content-image {
+    order: -1;
+  }
+
+  .content-image img {
+    margin: auto;
+    width: 200px;
+  }
+
+  main aside {
+    display: none;
+  }
+}
