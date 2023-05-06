@@ -92,10 +92,12 @@ header.navbar-container .nav-list li:hover a.mars {
 
 #hamburger-menu {
   display: none;
+  background-color: transparent;
 }
 
 #close {
   display: none;
+  background-color: transparent;
 }
 
 #hamburger-menu:active,
