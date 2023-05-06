@@ -98,6 +98,11 @@ header.navbar-container .nav-list li:hover a.mars {
   display: none;
 }
 
+#hamburger-menu:active,
+#close:active {
+  background-color: transparent;
+}
+
 .navbar-fixed {
   background-color: var(--background);
   transition: 0.3s linear;
