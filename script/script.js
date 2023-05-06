@@ -1,9 +1,14 @@
 // Toggle Hamburger Menu
 const hamburgerMenu = document.querySelector("#hamburger-menu");
+const closeBtn = document.querySelector("#close");
 const navList = document.querySelector(".nav-list ul");
 
 hamburgerMenu.addEventListener("click", function () {
-  navList.classList.toggle("active");
+  navList.classList.add("active");
+});
+
+closeBtn.addEventListener("click", function () {
+  navList.classList.remove("active");
 });
 
 // Hilangkan Nav dimanapun layar di klik

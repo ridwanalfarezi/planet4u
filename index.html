@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="icon" href="./img/icon.png" type="image/x-icon">
+    <link rel="icon" href="./img/icon.png" type="image/x-icon" />
 
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
@@ -15,9 +15,12 @@
   <body>
     <!-- Start of Navbar -->
     <header class="navbar-container">
-      <a href="/" class="nav-logo">Planet<span>4U</span></a>
+      <a href="#mercury" class="nav-logo">Planet<span>4U</span></a>
       <nav class="nav-list">
         <ul>
+          <a href="#" id="close">
+            <i data-feather="x"></i>
+          </a>
           <li><a href="#mercury" class="mercury">Mercury</a></li>
           <li><a href="#venus" class="venus">Venus</a></li>
           <li><a href="#earth" class="earth">Earth</a></li>
@@ -28,7 +31,7 @@
         </a>
       </nav>
     </header>
-    <!-- Start of Navbar -->
+    <!-- End of Navbar -->
 
     <!-- Start of Main -->
     <main>
@@ -115,16 +118,16 @@
         <div class="sidebar">
           <ul>
             <li>
-              <a href="#mercury"><img src="./img/mercury.png" alt=""></a>
+              <a href="#mercury"><img src="./img/mercury.png" alt="" /></a>
             </li>
             <li>
-              <a href="#venus"><img src="./img/venus.png" alt=""></a>
+              <a href="#venus"><img src="./img/venus.png" alt="" /></a>
             </li>
             <li>
-              <a href="#earth"><img src="./img/earth.png" alt=""></a>
+              <a href="#earth"><img src="./img/earth.png" alt="" /></a>
             </li>
             <li>
-              <a href="#mars"><img src="./img/mars.png" alt=""></a>
+              <a href="#mars"><img src="./img/mars.png" alt="" /></a>
             </li>
           </ul>
         </div>
@@ -132,6 +135,12 @@
       <!-- End of Sidebar -->
     </main>
     <!-- End of Main -->
+
+    <!-- Start of Footer -->
+    <footer>
+      <p>Copyright &copy; 2023 <span class="author">Ridwan Alfarezi</span></p>
+    </footer>
+    <!-- End of Footer -->
 
     <!-- Feather Icons -->
     <script>

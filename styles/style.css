@@ -94,6 +94,10 @@ header.navbar-container .nav-list li:hover a.mars {
   display: none;
 }
 
+#close {
+  display: none;
+}
+
 .navbar-fixed {
   background-color: var(--background);
   transition: 0.3s linear;
@@ -211,9 +215,18 @@ main aside .sidebar li img {
   animation: spin 10s linear infinite;
 }
 
-/* Animasi */
+footer {
+  background-color: #202124;
+  padding-block: 2rem;
+  text-align: center;
+}
 
-/* The Spin Animation */
+footer .author {
+  font-weight: 500;
+}
+
+/* Animation */
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -228,15 +241,16 @@ main aside .sidebar li img {
 @media (max-width: 900px) {
   header.navbar-container .nav-list ul {
     flex-direction: column;
-    background-color: #454545;
+    background-color: #202124;
     padding-block: 2rem;
     padding-inline-start: 0.5rem;
     border-radius: 5px 0 0 5px;
-    width: 40%;
-    margin-top: 3rem;
+    width: 45%;
     position: absolute;
+    top: 0;
     right: -100%;
     transition: 0.3s ease-in-out;
+    text-align: center;
   }
 
   header.navbar-container .nav-list ul.active {
@@ -245,6 +259,12 @@ main aside .sidebar li img {
 
   #hamburger-menu {
     display: block;
+  }
+
+  #close {
+    display: block;
+    padding-inline: 2rem;
+    text-align: center;
   }
 
   main {
