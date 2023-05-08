@@ -185,8 +185,7 @@ main {
 /* Sidebar */
 
 main aside {
-  max-width: 600px;
-  width: 100%;
+  width: min(100%, 600px);
   padding-top: 7rem;
 }
 
@@ -319,7 +318,7 @@ footer .author {
   }
 
   main aside {
-    width: 300px;
+    width: 350px;
     order: -1;
   }
 
